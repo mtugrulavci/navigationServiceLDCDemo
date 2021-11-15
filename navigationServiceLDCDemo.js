@@ -58,9 +58,48 @@ export default class NavigationServiceLDCDemo extends NavigationMixin(LightningE
         });
     }
 
-    navigateAccObject(){}
-    navigateConObject(){}
-    navigateToWebPage(){}
-    navigateToHomePage(){}
-    navigateToChatterPage(){}
+    navigateAccObject(){
+        this[NavigationMixin.Navigate]({
+            "type":"standard__objectPage",
+            "attributes":{
+                "objectApiName":"Account",
+                "actionName":"home"
+            }
+        });
+    }
+    navigateConObject(){
+        this[NavigationMixin.Navigate]({
+            "type":"standard__objectPage",
+            "attributes":{
+                "objectApiName":"Contact",
+                "actionName":"home"
+            }
+        });
+
+    }
+    navigateToWebPage(){
+        this[NavigationMixin.Navigate]({
+            "type":"standard__webPage",
+            "attributes":{
+                "url": "https://www.google.com/"
+            }
+        })
+
+    }
+    navigateToHomePage(){
+        this[NavigationMixin.Navigate]({
+            "type":"standard__namedPage",
+            attributes:{
+                pageName:"home"
+            }
+        });
+    }
+    navigateToChatterPage(){
+        this[NavigationMixin.Navigate]({
+            "type":"standard__namedPage",
+            attributes:{
+                pageName:"chatter"
+            }
+        });
+    }
 }
