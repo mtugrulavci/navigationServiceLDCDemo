@@ -57,4 +57,10 @@ export default class NavigationServiceLDCDemo extends NavigationMixin(LightningE
             }
         });
     }
+
+    navigateAccObject(){}
+    navigateConObject(){}
+    navigateToWebPage(){}
+    navigateToHomePage(){}
+    navigateToChatterPage(){}
 }

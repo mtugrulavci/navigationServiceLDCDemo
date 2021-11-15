@@ -14,7 +14,24 @@
                     <lightning-button label="AccountRecentView" onclick={navigateAccRecentView}></lightning-button>
                     <lightning-button label="Related List View" onclick={navigateRelatedListView}></lightning-button>
                 </lightning-button-group>
-            </lightning-card>
+            </lightning-card> <br>
+        <lightning-card title="Navigate to object Page">
+            <lightning-button-group>
+                <lightning-button label="Account Page" onclick={navigateAccObject}></lightning-button>
+                <lightning-button label="Account Page" onclick={navigateConObject}></lightning-button>
+            </lightning-button-group>
+        </lightning-card>
+        <lightning-card title="Navigate to Web Page">
+            <lightning-button-group>
+                <lightning-button label="Web Page" onclick={navigateToWebPage}></lightning-button>
+            </lightning-button-group>
+        </lightning-card>
+        <lightning-card title="Navigate to Standard Home Tabs">
+            <lightning-button-group>
+                <lightning-button label="Home Page" onclick={navigateToHomePage}></lightning-button>
+                <lightning-button label="Chatter Page" onclick={navigateToChatterPage}></lightning-button>
+            </lightning-button-group>
+        </lightning-card>
 
     </lightning-card>
 </template>
