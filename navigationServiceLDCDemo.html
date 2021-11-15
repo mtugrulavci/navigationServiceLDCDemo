@@ -6,8 +6,15 @@
                 <lightning-button label="Edit Record Page" onclick={navigateToEditRecordPage}></lightning-button>
                 <lightning-button label="View Record Page" onclick={navigateToViewRecordPage}></lightning-button>
 
-            </lightning-button-group>
+            </lightning-button-group> 
+        </lightning-card> <br>
 
-        </lightning-card>
+            <lightning-card title="Navigate to the list view">
+                <lightning-button-group>
+                    <lightning-button label="AccountRecentView" onclick={navigateAccRecentView}></lightning-button>
+                    <lightning-button label="Related List View" onclick={navigateRelatedListView}></lightning-button>
+                </lightning-button-group>
+            </lightning-card>
+
     </lightning-card>
 </template>

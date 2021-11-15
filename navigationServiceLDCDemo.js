@@ -34,4 +34,27 @@ export default class NavigationServiceLDCDemo extends NavigationMixin(LightningE
             }
         });
     }
+    navigateAccRecentView(){
+        this[NavigationMixin.Navigate]({
+            "type":"standard__objectPage",
+            "attributes" :{
+                "objectApiName":"Account",
+                "actionName":"list"
+            },
+            "state":{
+                "filterName":"Recent"
+            }
+        });
+    }
+    navigateRelatedListView(){
+        this[NavigationMixin.Navigate]({
+            "type":"standard__recordRelationshipPage",
+            "attributes" :{
+                recordId:this.recordId,
+                objectApiName:"Account",
+                relationshipApiName:"Contacts",
+                actionName:"view"
+            }
+        });
+    }
 }
